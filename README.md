@@ -51,12 +51,12 @@ model = optp(model, token_num=64)
 
 1. Results on LLaVA 1.5 7B with 64 tokens:
 ```
-bash run_scope_llava_7b.sh 64
+bash run_llava.sh 64
 ```
 
 2. Results on LLaVA-Next 7B with 160 tokens:
 ```
-bash run_scope_llava_next_7b.sh 160
+bash run-llava-next.sh 160
 ```
 
 
