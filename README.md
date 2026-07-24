@@ -1,5 +1,5 @@
-# SCOPE: Saliency-Coverage Oriented Token Pruning for Efficient Multimodel LLMs
-[[`Paper`](https://arxiv.org/abs/2510.24214) | [`BibTex`](#citation) | [`📂Logs`](https://drive.google.com/drive/folders/1pat-szhxEG6DW6rtiosysZL2eKOTRsOC?usp=sharing)]
+# OPTP: Orthogonal Projection Token Pruning for Efficient Multi-modal Large Language Models
+[[`Paper`] | [`📂Logs`](https://drive.google.com/drive/folders/1pat-szhxEG6DW6rtiosysZL2eKOTRsOC?usp=sharing)]
 
 ---
 
