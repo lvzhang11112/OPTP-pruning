@@ -21,11 +21,11 @@ Multimodal Large Language Models (MLLMs) typically process a large number of vis
 ## Installation
 1. Install the environment of [LLaVA](https://github.com/haotian-liu/LLaVA).
 ```
-conda create -n scope python=3.10 -y
-conda activate scope
-conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+conda create -n optp python=3.10 -y
+conda activate optp
+pip install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 
 
-git clone git@github.com:kinredon/SCOPE.git
+git clone git@github.com:kinredon/OPTP-pruning.git
 cd SCOPE
 
 pip install -r requirements.txt
@@ -33,7 +33,7 @@ cd LLaVA
 pip install -e .
 cd ..
 ```
-2. Install our SCOPE method by running the following command:
+2. Install our OPTP method by running the following command:
 ```
 pip install -e .
 ```
@@ -52,7 +52,7 @@ tokenizer, model, image_processor, context_len = load_pretrained_model(
     model_name=get_model_name_from_path(model_path)
 )
 ## 64 tokens are retained
-model = scope(model, token_num=64)
+model = optp(model, token_num=64)
 ```
 
 ## Main Results
@@ -67,16 +67,7 @@ bash run_scope_llava_7b.sh 64
 bash run_scope_llava_next_7b.sh 160
 ```
 
-## Main Table Results Log ([📂Google Drive](https://drive.google.com/drive/folders/1pat-szhxEG6DW6rtiosysZL2eKOTRsOC?usp=sharing))
 
-Logs for main tables are results provided in [google drive](https://drive.google.com/drive/folders/1pat-szhxEG6DW6rtiosysZL2eKOTRsOC?usp=sharing) for reference.
-
-| Table | Explanation |
-|:-|:-|
-| [Table 1](https://drive.google.com/drive/folders/1OsyjCRD1kNWM29c-zqmiArtYcLKFjhEj?usp=sharing) | Results on LLaVA 1.5 7B.|
-| [Table 2](https://drive.google.com/drive/folders/1YDd0h0dgz7HawhPwSB-TiKxChbYHHYnF?usp=drive_link) | Results on LLaVA-Next 7B. |
-|[Table 6](https://drive.google.com/drive/folders/1QMPmCASwaD-o2kN7IykMyokOCCkv-P09?usp=drive_link)  | Results on LLaVA 1.5 13B. |
-|[Table 7](https://drive.google.com/drive/folders/19ybzm80pSpyr_ygxwTkLJ4moknOwYZLO?usp=drive_link)  | Results on LLaVA-Next 13B.|
 
 
 ## Acknowledgement
@@ -85,12 +76,5 @@ Logs for main tables are results provided in [google drive](https://drive.google
 - We also thank [VisionZip](https://github.com/dvlab-research/VisionZip), [DivPrune](https://github.com/vbdi/divprune), [FastV](https://github.com/pkunlp-icler/FastV), [SparseVLM](https://github.com/Gumpest/SparseVLMs), and others for their contributions, which have provided valuable insights.
 
 ## Citation
-If you find this project useful in your research, please consider citing:
-```
-@article{deng2025scope,
-  title={SCOPE: Saliency-Coverage Oriented Token Pruning for Efficient Multimodel LLMs},
-  author={Deng Jinhong, Li Wen, and Zhou, Joey Tianyi, and He, Yang},
-  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2025}
-}
+
 ```
