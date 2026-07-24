@@ -17,7 +17,7 @@ conda create -n optp python=3.10 -y
 conda activate optp
 pip install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 
 
-git clone git@github.com:kinredon/OPTP-pruning.git
+git clone git@github.com:lvzhang11112/OPTP-pruning.git
 cd SCOPE
 
 pip install -r requirements.txt
