@@ -1,14 +1,7 @@
 # OPTP: Orthogonal Projection Token Pruning for Efficient Multi-modal Large Language Models
 [[`Paper`] | [`📂Logs`](https://drive.google.com/drive/folders/1pat-szhxEG6DW6rtiosysZL2eKOTRsOC?usp=sharing)]
 
----
 
-Official Implementation for "[SCOPE: Saliency-Coverage Oriented Token Pruning for Efficient Multimodel LLMs](https://arxiv.org/abs/2510.24214)".
-
-[Jinhong Deng](https://scholar.google.co.jp/citations?user=XrtJ8mEAAAAJ),&nbsp;
-[Wen Li*](https://scholar.google.co.jp/citations?user=yjG4Eg4AAAAJ),&nbsp;
-[Joey Tianyi Zhou](https://scholar.google.com/citations?user=cYNqDokAAAAJ),&nbsp;
-[Yang He](https://scholar.google.com/citations?user=vvnFsIIAAAAJ)
 
 
 > **Abstract**:
