@@ -10,17 +10,12 @@ Visual token pruning has recently emerged as a indispensable technique for enabl
 ```
 conda create -n optp python=3.10 -y
 conda activate optp
-pip install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 
+pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 
 
 pip install -r requirements.txt
 cd LLaVA
 pip install -e .
 cd ..
-```
-2. Install our OPTP method by running the following command:
-```
-pip install -e .
-```
 
 ## Usage
 ```
